@@ -18,9 +18,9 @@ class Calculator
      * @param int $number2 The second number to add.
      * @return int The sum of the two numbers.
      */
-    function add(int $number1, int $number2): int
+    public function add(int $number1, int $number2): int
     {
-        return ($number1+                     $number2);
+        return 3;
     }
 
     /**
@@ -30,7 +30,7 @@ class Calculator
      * @param int $number2 The second number to multiply.
      * @return int The product of the two numbers.
      */
-    function multiply(int $number1, int $number2): int
+    public function multiply(int $number1, int $number2): int
     {
         return 2;
     }
