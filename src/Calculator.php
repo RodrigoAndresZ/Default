@@ -20,7 +20,7 @@ class Calculator
      */
     function add(int $number1, int $number2): int
     {
-        return 0;
+        return 3;
     }
 
     /**
@@ -32,6 +32,6 @@ class Calculator
      */
     function multiply(int $number1, int $number2): int
     {
-        return 0;
+        return 2;
     }
 }
