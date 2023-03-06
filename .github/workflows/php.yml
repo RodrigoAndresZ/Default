@@ -1,0 +1,19 @@
+name: PHP Workflow
+
+on: push
+
+jobs:
+  test:
+    name: PHP Test
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: composer install
+    - name: Run Unit Tests
+      run: vendor/bin/phpunit tests/
+    - name: Run PHPCS
+      run: vendor/bin/phpcs --standard=PSR12 src/
+    - name: Run PHPMD
+      run: vendor/bin/phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode
