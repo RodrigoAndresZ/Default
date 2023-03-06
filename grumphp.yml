@@ -31,7 +31,7 @@ grumphp:
             ruleset: [ 'cleancode', 'codesize', 'naming' ]
             triggered_by: [ 'php' ]
         phpcs:
-            standard: [ ]
+            standard: PSR12
             severity: ~
             error_severity: ~
             warning_severity: ~
