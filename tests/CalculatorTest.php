@@ -21,29 +21,14 @@ final class CalculatorTest extends TestCase
         $this->assertEquals(3, $result);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /**
      * @test
      */
     public function shouldMultiplyTwoArguments()
     {
-                $calculator = new Calculator();
+        $calculator = new Calculator();
 
-        $result = $calculator->             multiply(1, 2);
+        $result = $calculator->multiply(1, 2);
 
         $this->assertEquals(2, $result);
     }
